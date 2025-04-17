@@ -31,14 +31,81 @@ body {
     display: flex;
 }
 
-.carrossel {
+.container-carrossel {
     background-color: chartreuse; /* TEMP */
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 400px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div#carrossel { 
+    grid-row: 1/2;
+    grid-column: 1 / 8;
+    width: 100%; /* talvez tenha que mudar isso aqui */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+
+.item-carrossel {
     text-align: center;
-    align-content: center; /* TEMP */
-    width: 60%;
-    min-width: none;
-    height: 400px;
-    margin: 10px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: blueviolet; /* TEMP */
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-color: white; /* TEMP */
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all .25s linear;
+    transform: rotateY(calc(-10deg * var(--r)));
+    translateX(calc(-300px * var(--r)));
+    z-index: calc((-300px * var(--r)));
+}
+
+.item-carrossel img{
+    width: 100px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.item-carrossel h3 {
+    /* margin-bottom: 2px; */
+}
+
+.item-carrossel p {
+    font-style: italic;
+    /* margin-top: 2px; */
+}
+
+div.item-carrossel:nth-of-type(1) {
+    --offset: 1;
+}
+div.item-carrossel:nth-of-type(2) {
+    --offset: 2;
+}
+div.item-carrossel:nth-of-type(3) {
+    --offset: 3;
+}
+div.item-carrossel:nth-of-type(4) {
+    --offset: 4;
+}
+div.item-carrossel:nth-of-type(5) {
+    --offset: 5;
 }
 
 #texto-emocionante {
