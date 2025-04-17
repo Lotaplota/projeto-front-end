@@ -215,7 +215,9 @@
   }
 
   .carrossel {
-    height: 60px;
+    aspect-ratio: 16 / 9;
+    margin: 20px;
+    width: 100%;
     background-color: #f39c12;
   }
   
