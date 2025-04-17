@@ -3,62 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marquinhos Alugueis</title>
+    <title>Marquinhos Alugueis - Serviço de Aluguel de Carros</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="barra-topo">
-        <div id="logo">
-            logo
-        </div>
-        <div id="icone-usuario">
-            ícone usuário
-        </div>
-    </header>
-
-    <section class="corpo-promocional">
-        <div class="container-carrossel">
-            <div id="carrossel">
-                <div class="item-carrossel">
-                    <img src="TODO" alt="">
-                    <h3>Título</h3>
-                    <p>Texto texto texto</p>
-                </div>
-                <div class="item-carrossel">
-                    <img src="TODO" alt="">
-                    <h3>Título</h3>
-                    <p>Texto texto texto</p>
-                </div>
-                <div class="item-carrossel">
-                    <img src="TODO" alt="">
-                    <h3>Título</h3>
-                    <p>Texto texto texto</p>
-                </div>
-                <div class="item-carrossel">
-                    <img src="TODO" alt="">
-                    <h3>Título</h3>
-                    <p>Texto texto texto</p>
-                </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Marquinhos<span>Alugueis</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#carro">Carros</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Login que pode ser ignorado pq a gente nem vai usar -->
+            <div class="user-actions">
+                <a href="#login" class="botao-login">Entrar</a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-        
-        <input type="radio" name="position"/>
-        <input type="radio" name="position"/>
-        <input type="radio" name="position" checked/>
-        <input type="radio" name="position"/>
-        <input type="radio" name="position"/>
-        
-        <div id="texto-emocionante">
-            emoção e capitalismo
-        </div>
-    </section>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-conteudo">
+                    <h2>Aluguel de Carros Premium com Preços Acessíveis</h2>
+                    <p>Experimente a liberdade da estrada com nossa ampla seleção de veículos de qualidade para qualquer ocasião.</p>
+                    <div class="card-centro-botao">
+                        <a href="#carro" class="botao botao-primario">Ver Carros</a>
+                        <a href="#contato" class="botao botao-secundario">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/img/lancer.png" alt="Carro de luxo para alugar">
+                </div>
+            </div>
+        </section>
 
-    <section class="depoimentos">
-        <div class="caixa-depoimento">que emoção estar aqui</div>
-        <div class="caixa-depoimento">que emoção estar aqui</div>
-        <div class="caixa-depoimento">que emoção estar aqui</div>
-        <div class="caixa-depoimento">que emoção estar aqui</div>
-    </section>
+        <section id="todos-carros" class="section-carro">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Carros</h2>
+                    <p>Escolha entre nossa vasta gama de veículos para atender às suas necessidades</p>
+                </div>
+                <div class="filtros-carro">
+                    <button class="filtro-botao active" data-filter="todos">Todos os Carros</button>
+                    <button class="filtro-botao" data-filter="economico">Econômicos</button>
+                    <button class="filtro-botao" data-filter="suv">SUVs</button>
+                    <button class="filtro-botao" data-filter="Luxo">Luxo</button>
+                </div>
+                <div class="grid-carro">
+                    <article class="cartao-carro">
+                        <div class="imagem-carro">
+                            <img src="/img/corolla.png" alt="Toyota Corolla">
+                        </div>
+                        <div class="detalhes-carro">
+                            <h3>Toyota Corolla</h3>
+                            <div class="caracteristicas-carro">
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Assentos"> 5 Assentos</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Bagagem"> 2 Malas</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Transmissão"> Automático</span>
+                            </div>
+                            <div class="preco-carro">
+                                <span class="preco">R$45</span> / dia
+                            </div>
+                            <a href="#reserva" class="botao botao-primario botao-full">Reservar Agora</a>
+                        </div>
+                    </article>
+                    <article class="cartao-carro">
+                        <div class="imagem-carro">
+                            <img src="/img/civic.png" alt="Honda Civic">
+                        </div>
+                        <div class="detalhes-carro">
+                            <h3>Honda Civic</h3>
+                            <div class="caracteristicas-carro">
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Assentos"> 5 Assentos</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Bagagem"> 2 Malas</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Transmissão"> Automático</span>
+                            </div>
+                            <div class="preco-carro">
+                                <span class="preco">R$42</span> / dia
+                            </div>
+                            <a href="#reserva" class="botao botao-primario botao-full">Reservar Agora</a>
+                        </div>
+                    </article>
+                    <article class="cartao-carro">
+                        <div class="imagem-carro">
+                            <img src="/img/ford.png" alt="Ford Explorer">
+                        </div>
+                        <div class="detalhes-carro">
+                            <h3>Ford Explorer</h3>
+                            <div class="caracteristicas-carro">
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Assentos"> 7 Assentos</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Bagagem"> 4 Malas</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Transmissão"> Automático</span>
+                            </div>
+                            <div class="preco-carro">
+                                <span class="preco">R$75</span> / dia
+                            </div>
+                            <a href="#reserva" class="botao botao-primario botao-full">Reservar Agora</a>
+                        </div>
+                    </article>
+                    <article class="cartao-carro">
+                        <div class="imagem-carro">
+                            <img src="/img/mercedes.png" alt="Mercedes C-Class">
+                        </div>
+                        <div class="detalhes-carro">
+                            <h3>Mercedes C-Class</h3>
+                            <div class="caracteristicas-carro">
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Assentos"> 5 Assentos</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Bagagem"> 3 Malas</span>
+                                <span><img src="/placeholder.svg?height=20&width=20" alt="Transmissão"> Automático</span>
+                            </div>
+                            <div class="preco-carro">
+                                <span class="preco">R$95</span> / dia
+                            </div>
+                            <a href="#reserva" class="botao botao-primario botao-full">Reservar Agora</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="veja-mais">
+                    <a href="#todos-carros" class="botao botao-secundario">Ver Todos os Carros</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="comentarios" class="comentarios-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Depoimentos de Clientes</h2>
+                    <p>O que nossos clientes dizem sobre nosso serviço</p>
+                </div>
+                <div class="comentarios-grid">
+                    <div class="comentario-card">
+                        <div class="comentario-conteudo">
+                            <p>"O serviço foi excelente! O carro estava limpo e em perfeitas condições. Com certeza alugarei novamente."</p>
+                        </div>
+                        <div class="comentario-autor">
+                            <img src="/img/feliz.gif" alt="Cliente" class="autor-img">
+                            <div class="autor-info">
+                                <h4>Cayo Mendes</h4>
+                                <p>Brasília</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentario-card">
+                        <div class="comentario-conteudo">
+                            <p>"Processo tranquilo desde a reserva até a devolução. A equipe foi amigável e profissional. Recomendo muito!"</p>
+                        </div>
+                        <div class="comentario-autor">
+                            <img src="/img/piscadela.gif" alt="Cliente" class="autor-img">
+                            <div class="autor-info">
+                                <h4>Kristhian Lucas</h4>
+                                <p>Brasília</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentario-card">
+                        <div class="comentario-conteudo">
+                            <p>"Ótimos preços e serviço ainda melhor. O carro foi entregue pontualmente no meu hotel."</p>
+                        </div>
+                        <div class="comentario-autor">
+                            <img src="/img/love.gif" alt="Cliente" class="autor-img">
+                            <div class="autor-info">
+                                <h4>Karina de Bessa</h4>
+                                <p>Brasília</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentario-card">
+                        <div class="comentario-conteudo">
+                            <p>"Já aluguei de várias empresas, mas a Marquinhos Alugueis oferece o melhor custo-benefício de longe."</p>
+                        </div>
+                        <div class="comentario-autor">
+                            <img src="/img/money.gif" alt="Cliente" class="autor-img">
+                            <div class="autor-info">
+                                <h4>Peterson Patrick</h4>
+                                <p>Brasília</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
