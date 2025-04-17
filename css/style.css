@@ -1,0 +1,44 @@
+:root {
+    --cor-principal: #999999;
+    --cor-secundaria: #4444444;
+}
+
+.barra-topo {
+    position: relative;
+    display: flex;
+    background-color: var(--cor-principal);
+}
+
+#logo {
+    background-color: blue; /* TEMP */
+}
+
+#icone-usuario {
+    background-color: blue; /* TEMP */
+    position: absolute;
+    right: 20px;
+}
+
+.corpo-promocional {
+    background-color: aquamarine; /* TEMP */
+    padding: 20px;
+    display: flex;
+}
+
+#carrossel {
+    background-color: chartreuse; /* TEMP */
+    text-align: center;
+    align-content: center; /* TEMP */
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+}
+
+#texto-emocionante {
+    text-align: center;
+    align-content: center;
+    background-color: chartreuse; /* TEMP */
+    height: max;
+    margin: 10px;
+    margin-left: 100px;
+}
