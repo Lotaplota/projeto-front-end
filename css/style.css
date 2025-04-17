@@ -1,6 +1,12 @@
+/* TEMP significa linha de código temporária */
+
 :root {
     --cor-principal: #999999;
     --cor-secundaria: #4444444;
+}
+
+body {
+    margin: 0px
 }
 
 .barra-topo {
@@ -25,11 +31,12 @@
     display: flex;
 }
 
-#carrossel {
+.carrossel {
     background-color: chartreuse; /* TEMP */
     text-align: center;
     align-content: center; /* TEMP */
-    width: 500px;
+    width: 60%;
+    min-width: none;
     height: 400px;
     margin: 10px;
 }
@@ -39,6 +46,21 @@
     align-content: center;
     background-color: chartreuse; /* TEMP */
     height: max;
+    width: 40%;
     margin: 10px;
-    margin-left: 100px;
+    margin-left: 30px;
+}
+
+.depoimentos {
+    padding: 20px;
+    background-color: burlywood; /* TEMP */
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.caixa-depoimento {
+    background-color: crimson;  /* TEMP */
+    padding: 10px;
 }
