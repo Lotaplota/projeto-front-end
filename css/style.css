@@ -213,6 +213,11 @@
     align-items: center;
     gap: 2rem;
   }
+
+  .carrossel {
+    height: 60px;
+    background-color: #f39c12;
+  }
   
   .hero-content {
     flex: 1;
