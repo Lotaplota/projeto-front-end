@@ -67,6 +67,7 @@
   }
 
   .container {
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -215,12 +216,12 @@
   }
 
   .carrossel {
-    padding: 2px;
+    padding: 0px;
   }
 
   .slider-wrapper {
       position: relative;
-      max-width: 48rem;
+      max-width: 60rem;
       margin: 0 auto;
   }
 
@@ -228,6 +229,7 @@
       display: flex;
       aspect-ratio: 16 / 9;
       overflow-x: auto;
+      scrollbar-width: none;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       box-shadow: 0 1.5rem 3rem -.75rem rgba(0, 0, 0, .25);
