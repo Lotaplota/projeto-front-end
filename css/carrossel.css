@@ -9,12 +9,40 @@
 }
 
 .slider {
-    height: 600px;
     display: flex;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -.75rem rgba(0, 0, 0, .25);
     border-radius: .5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the nav bubbles in relations to itself */
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease .25s;
+}
+
+.slider-nav a:hover {
+    opacity: 100%;
 }
