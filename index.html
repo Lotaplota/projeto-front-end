@@ -8,36 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <!-- Script que busca o cabeçalho comum para todo o site -->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+                });
+    </script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>Marquinhos<span>Alugueis</span></h1>
-            </div>
-
-            <!-- Navegação principal -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home" class="active">Início</a></li>
-                    <li><a href="#carro">Carros</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-
-            <!-- Login que pode ser ignorado pq a gente nem vai usar -->
-            <div class="user-actions">
-                <a href="#login" class="botao-login">Entrar</a>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
         <section id="home" class="hero-section">
