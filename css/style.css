@@ -210,13 +210,20 @@
   }
   
   .hero-section .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero-conteudo {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem; 
   }
 
   .carrossel {
-    padding: 0px;
+    flex: 1; 
+    max-width: 50%;
   }
 
   .slider-wrapper {
@@ -237,7 +244,8 @@
   }
 
   .slider-carrossel img {
-      flex: 1 0 100%;
+    width: 100%;
+      flex: 0 0 100%;
       scroll-snap-align: start;
       object-fit: cover;
   }
@@ -248,34 +256,41 @@
       position: absolute;
       bottom: 1.25rem;
       left: 50%;
-      transform: translateX(-50%); /* Centers the nav bubbles in relations to itself */
+      transform: translateX(-50%);
       z-index: 1;
   }
 
-  .slider-nav a {
-      width: .8rem;
-      height: .8rem;
-      border-radius: 50%;
-      background-color: var(--secondary-color);
-      opacity: .75;
-      transition: background-color ease .25s;
-  }
+  .slider-nav button {
+    width: .8rem; 
+    height: .8rem; 
+    border-radius: 50%; 
+    background-color: var(--secondary-color); 
+    opacity: .75;
+    transition: background-color ease .25s; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    font-size: 0; 
+}
 
-  .slider-nav a:hover {
-      background-color: var(--accent-color);
-  }
+.slider-nav button:hover,
+.slider-nav button.active { 
+    background-color: var(--accent-color); 
+    opacity: 1; 
+}
+
+.hero-texto {
+  flex: 1; 
+  max-width: 50%; 
+}
   
-  .hero-content {
-    flex: 1;
-  }
-  
-  .hero-content h2 {
+  .hero-texto h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     line-height: 1.2;
   }
   
-  .hero-content p {
+  .hero-texto p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--text-light);

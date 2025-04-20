@@ -18,6 +18,7 @@
                 document.getElementById("header-placeholder").innerHTML = data;
                 });
     </script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -33,16 +34,17 @@
                     <section class="carrossel">
                         <div class="slider-wrapper">
                             <div class="slider-carrossel">
-                                <img id="slide-1" src="img/slide-1.png">
-                                <img id="slide-2" src="img/slide-2.png">
-                                <img id="slide-3" src="img/slide-3.png">
+                                <img id="slide-1" src="img/lancer.png">
+                                <img id="slide-2" src="img/civic.png">
+                                <img id="slide-3" src="img/corolla.png">
                             </div>
 
                             <!-- Bolhas de navegação do carrossel -->
                             <div class="slider-nav">
-                                <a href="#slide-1"></a>
-                                <a href="#slide-2"></a>
-                                <a href="#slide-3"></a>
+                                <button data-slide="0" aria-label="Slide 1"></button>
+                                <button data-slide="1" aria-label="Slide 2"></button>
+                                <button data-slide="2" aria-label="Slide 3"></button>
+                                <!-- Se tu quiser botar mais botões Kristhian só continuar seguindo -->
                             </div>
                         </div>
                     </section>
