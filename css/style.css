@@ -464,3 +464,180 @@
     font-size: 0.9rem;
     color: var(--text-light);
   }
+
+
+
+
+  /*footer inicio*/
+footer {
+  width: 100%; /*tamanho do footer*/
+  color: var(--accent-color); /*Cor dos nomes que estão dentro do footer e que eu não mudei*/
+  text-decoration: none; /*tirei underline das imagens de rede-sociais*/
+}
+/*o footer-conteudo é todo o conteudo que existe dentro do footer*/
+  #footer-conteudo{
+    background-color: var(--dark-color); /*a cor de fundo do footer*/
+    display: grid; /*especifiquei que o display seria grid*/
+    grid-template-columns: repeat(4, 1fr); /*aqui definir que o grid teria 4 colunas em 1fr*/
+    padding: 3rem 3.5rem; /*usei o paddin para não deixar colados*/
+
+  }
+
+            /*footer-nome inicio*/
+/*footer-nome estou modificando o sobre,link, inscrição*/
+
+.footer-nome{
+  color: var(--accent-color); /*cor do h3*/
+  font-weight: 500;/*para deixar o negrito mais forte*/
+  padding: 0.5rem 0; /* espaçamento entre o h3 e a barrinha de baixo*/
+  position: relative; /*especifiquei que a posição seria relative*/
+  display: inline-block;/*usei o display inline-block para deixar especificar que seria só até onde o nome do texto vai e não no final da div*/
+}
+/*usei um after para fazer a barrinha de carregamento em baixo*/
+.footer-nome::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+.footer-nome:hover::after {
+  width: 100%;
+  transition: 0.5s ease;
+}
+            /*footer-nome fim*/
+
+  #footer-about p {
+    color: var(--primary-color);  /*a cor do texto*/
+  }
+            /*social media inicio*/
+  #rede-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    height: 50px;
+    background: var(--dark-color)
+  }
+
+  #rede-social .footer-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s ease;
+    
+  }
+  #rede-social .footer-link i {
+    font-size: 1.25rem;
+  }
+  #rede-social .footer-link:hover{
+    opacity: 70%;
+  }
+  #insta{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807)
+  }
+
+  #whatsapp{
+    background-color: green;
+  }
+
+  #Facebook {
+    background-color: rgba(47, 80, 188, 0.893);
+  }
+  /*fim do social media*/
+/*lista inicio*/
+  .footer-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+  }
+  .footer-lista .footer-link{
+    color: #ad2212;
+    transition: all 0.4s;
+  }
+  .footer-lista .footer-link:hover{
+    color: #7f37c9;
+  }
+  /*lista fim*/
+
+/*formulario*/
+  #footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #footer-subscribe p{
+    color: var(--primary-color);
+  }
+
+  #input-group{
+    display: flex;
+    align-items: center;
+    background-color: #2c3e50ee;
+    border-radius: 4px;
+  }
+  
+  #input-group input { 
+    all: unset; /*tirar a formatação que vem*/
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 5%;
+    background-color: #2533424d;;
+  }
+/*botao do formulario*/
+  #input-group button{
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    border-radius: 0px 4px 4px 0px;
+    cursor:  pointer;
+    transition: all 0.4s;
+  }
+
+  #input-group button:hover{
+    opacity: 0.8;
+  }
+
+  /*nome de copyright*/
+  #footer-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#34495e, #2c3e50, #333333) ;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+  }
+  
+  #footer-copyright h5{
+    color: #ff9807;
+    
+  }
+
+/*tamanho das telas*/
+  @media screen and (max-width: 768px) {
+    #footer-conteudo{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    #footer-conteudo{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3rem 2rem;
+    }
+  }
