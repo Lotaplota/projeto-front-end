@@ -402,8 +402,9 @@
   .veja-mais {
     text-align: center;
   }
-  /* Seção de Comentarios */
-  .comentarios-section {
+  /* Seção de Comentarios e Sobre */
+  .comentarios-section,
+  .sobre-section {
     padding: 5rem 0;
   }
   
@@ -511,9 +512,6 @@ footer {
 }
             /*footer-nome fim*/
 
-  #footer-about p {
-    color: var(--primary-color);  /*a cor do texto*/
-  }
             /*social media inicio*/
   #rede-social{
     display: flex;
@@ -585,7 +583,7 @@ footer {
   #input-group{
     display: flex;
     align-items: center;
-    background-color: #2c3e50ee;
+    background-color: var(--text-light);
     border-radius: 4px;
   }
   
@@ -599,6 +597,7 @@ footer {
 /*botao do formulario*/
   #input-group button{
     background-color: var(--secondary-color);
+    height: 100%;
     border: none;
     color: var(--primary-color);
     padding: 0px 1.25rem;
