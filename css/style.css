@@ -218,12 +218,13 @@
   .hero-conteudo {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem; 
   }
 
   .carrossel {
     flex: 1; 
-    max-width: 50%;
+    min-width: 400px;
   }
 
   .slider-wrapper {
@@ -281,7 +282,7 @@
 
 .hero-texto {
   flex: 1; 
-  max-width: 50%; 
+  min-width: 50%; 
 }
   
   .hero-texto h2 {
