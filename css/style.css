@@ -682,6 +682,7 @@ botao botao-primario botao-full spoof {
 
 .caixa-contato textarea:focus {
   outline-color: var(--primary-color);
+  border: none;
 }
 
 .caixa-contato button {
