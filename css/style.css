@@ -561,7 +561,7 @@ footer {
   list-style: none;
 }
 .footer-lista .footer-link{
-  color: #ad2212;
+  color: #ffffff;
   transition: all 0.4s;
 }
 .footer-lista .footer-link:hover{
@@ -577,7 +577,7 @@ footer {
 }
 
 #footer-subscribe p{
-  color: var(--primary-color);
+  color: white;
 }
 
 #input-group{
