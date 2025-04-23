@@ -658,6 +658,10 @@ botao botao-primario botao-full spoof {
   }
 }
 
+.contato-section {
+  margin-bottom: 40px;
+}
+
 .contato-section .container {
   display: flex;
   height: 100px;
@@ -672,12 +676,12 @@ botao botao-primario botao-full spoof {
 
 .caixa-contato textarea {
   font-size: 12pt;
-  color: white;
+  color: var(--dark-color);
   resize: none;
   padding: 6px;
   vertical-align: top;
   width: 100%;
-  background-color: #7f8c8d;
+  background-color: var(--light-color);
 }
 
 .caixa-contato textarea:focus {
