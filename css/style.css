@@ -275,7 +275,7 @@
 }
 
 .slider-nav button:hover,
-.slider-nav button.active { 
+.slider-nav button.active {
     background-color: var(--accent-color); 
     opacity: 1; 
 }
@@ -311,7 +311,7 @@
   
   /* Seção de Carros */
   .section-carro {
-    padding: 5rem 0;
+    padding: 2rem 0;
   }
   
   .filtros-carro {
