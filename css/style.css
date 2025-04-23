@@ -658,6 +658,44 @@ botao botao-primario botao-full spoof {
   }
 }
 
-.footer-link spoof {
+.contato-section .container {
+  display: flex;
+  height: 100px;
+  justify-items: center;
+}
 
+.caixa-contato {
+  display: flex;
+  width: 60%;
+  min-width: 400px;
+}
+
+.caixa-contato textarea {
+  font-size: 12pt;
+  color: white;
+  resize: none;
+  padding: 6px;
+  vertical-align: top;
+  width: 100%;
+  background-color: #7f8c8d;
+}
+
+.caixa-contato textarea:focus {
+  outline-color: var(--primary-color);
+}
+
+.caixa-contato button {
+  border-radius: 0 10px 10px 0;
+  width: 80px;
+  border: none;
+  background-color: var(--primary-color);
+  transition: all .2s ease;
+}
+
+.caixa-contato button:hover {
+  filter: brightness(90%);
+}
+
+.caixa-contato button img {
+  width: 40%;
 }
