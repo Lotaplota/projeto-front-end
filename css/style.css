@@ -554,90 +554,110 @@ footer {
   }
   /*fim do social media*/
 /*lista inicio*/
-  .footer-lista{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-  }
-  .footer-lista .footer-link{
-    color: #ad2212;
-    transition: all 0.4s;
-  }
-  .footer-lista .footer-link:hover{
-    color: #7f37c9;
-  }
-  /*lista fim*/
+.footer-lista{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+.footer-lista .footer-link{
+  color: #ad2212;
+  transition: all 0.4s;
+}
+.footer-lista .footer-link:hover{
+  color: #7f37c9;
+}
+/*lista fim*/
 
 /*formulario*/
-  #footer-subscribe{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+#footer-subscribe{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
-  #footer-subscribe p{
-    color: var(--primary-color);
-  }
+#footer-subscribe p{
+  color: var(--primary-color);
+}
 
-  #input-group{
-    display: flex;
-    align-items: center;
-    background-color: var(--text-light);
-    border-radius: 4px;
-  }
-  
-  #input-group input { 
-    all: unset; /*tirar a formatação que vem*/
-    padding: 0.75rem;
-    width: 100%;
-    border-radius: 5%;
-    background-color: #2533424d;;
-  }
+#input-group{
+  display: flex;
+  align-items: center;
+  background-color: var(--text-light);
+  border-radius: 4px;
+}
+
+#input-group input { 
+  all: unset; /*tirar a formatação que vem*/
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 5%;
+  background-color: #2533424d;;
+}
 /*botao do formulario*/
-  #input-group button{
-    background-color: var(--secondary-color);
-    height: 100%;
-    border: none;
-    color: var(--primary-color);
-    padding: 0px 1.25rem;
-    font-size: 1.125rem;
-    border-radius: 0px 4px 4px 0px;
-    cursor:  pointer;
-    transition: all 0.4s;
-  }
+#input-group button{
+  background-color: var(--secondary-color);
+  height: 100%;
+  border: none;
+  color: var(--primary-color);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  border-radius: 0px 4px 4px 0px;
+  cursor:  pointer;
+  transition: all 0.4s;
+}
 
-  #input-group button:hover{
-    opacity: 0.8;
-  }
+#input-group button:hover{
+  opacity: 0.8;
+}
 
-  /*nome de copyright*/
-  #footer-copyright{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(#34495e, #2c3e50, #333333) ;
-    font-size: 0.9rem;
-    padding: 1.5rem;
-    font-weight: 100;
-  }
-  
-  #footer-copyright h5{
-    color: #ff9807;
-    
-  }
+/*nome de copyright*/
+#footer-copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#34495e, #2c3e50, #333333) ;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+#footer-copyright h5{
+  color: #ff9807; 
+}
+
+/* Tag que preenche os links vazios e os direcionam a Luganenhum */
+.spoof,
+footer-link spoof,
+botao botao-primario botao-full spoof {
+  transition: background-color .2s ease;
+}
+
+.spoof:active {
+  text-decoration: none;
+  color: transparent;
+  background-image: url(../img/spoof.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
 
 /*tamanho das telas*/
-  @media screen and (max-width: 768px) {
-    #footer-conteudo{
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
+@media screen and (max-width: 768px) {
+  #footer-conteudo{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
+}
 
-  @media screen and (max-width: 426px) {
-    #footer-conteudo{
-      grid-template-columns: repeat(1, 1fr);
-      padding: 3rem 2rem;
-    }
+@media screen and (max-width: 426px) {
+  #footer-conteudo{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
   }
+}
+
+.footer-link spoof {
+
+}
