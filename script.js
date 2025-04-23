@@ -16,3 +16,17 @@ document.querySelectorAll('.slider-nav button').forEach((btn) => {
         }
     });
 });
+
+// Placeholder do cabeçalho
+fetch('header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+                });
+
+// Placeholder do rodapé
+fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        });
