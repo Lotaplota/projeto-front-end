@@ -128,7 +128,7 @@
   .section-header h2::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
@@ -593,9 +593,7 @@
 
 
 /* Tag que preenche os links vazios e os direcionam a Luganenhum */
-.spoof,
-footer-link spoof,
-botao botao-primario botao-full spoof {
+.spoof {
   transition: background-color .2s ease;
 }
 
