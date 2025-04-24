@@ -10,15 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><!--Adicionei, para colocar as imagens de redes sociais e email.-->
-
-    <!-- Script que busca o cabeçalho comum para todo o site -->
-    <script>
-        fetch('header.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("header-placeholder").innerHTML = data;
-                });
-    </script>
     <script src="script.js" defer></script>
 </head>
 
@@ -180,5 +171,7 @@
             </div>
         </div>
     </section>
-    <!-- TODO: transferir o conteúdo da página carros para esta página. -->
+
+    <!-- Rodapé da página contido no arquivo 'footer.html' -->
+    <div id="footer-placeholder"></div>
 </body>
