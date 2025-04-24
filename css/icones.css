@@ -1,39 +1,31 @@
-
-
-  /*parte dos icones*/ 
-  
-  
-  .grid-icon{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: 1px;
-    margin: 1px;
-    padding: 1px;
-    background-color: white;
-
-}
-.img-icon{
-    width: 40%;
-    background-color: white;
-} 
-.card-icon{
-
-    background-color: white;
-    padding: 1px;
-    text-align: justify;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px,10fr));
-    
-}
-.letra-p{
-    text-align: justify;
-    background-color: white;
-    width:80px ;
-    margin-left: -40%;
-    margin-top: 10px;
-    
+.grid-icon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  margin: 1px;
+  padding: 1px;
+  background-color: white;
 }
 
-/*fim partes dos icones*/
+.img-icon {
+  width: 40%;
+  background-color: white;
+}
+
+.card-icon {
+  background-color: white;
+  padding: 1px;
+  text-align: justify;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 10fr));
+}
+
+.letra-p {
+  text-align: justify;
+  background-color: white;
+  width: 80px;
+  margin-left: -40%;
+  margin-top: 10px;
+}
