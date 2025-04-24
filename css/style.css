@@ -128,7 +128,7 @@
   .section-header h2::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
@@ -470,166 +470,130 @@
 
 
 
-  /*footer inicio*/
-footer {
-  width: 100%; /*tamanho do footer*/
-  color: var(--accent-color); /*Cor dos nomes que estão dentro do footer e que eu não mudei*/
-  text-decoration: none; /*tirei underline das imagens de rede-sociais*/
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 4rem 0 2rem;
 }
-/*o footer-conteudo é todo o conteudo que existe dentro do footer*/
-  #footer-conteudo{
-    background-color: var(--dark-color); /*a cor de fundo do footer*/
-    display: grid; /*especifiquei que o display seria grid*/
-    grid-template-columns: repeat(4, 1fr); /*aqui definir que o grid teria 4 colunas em 1fr*/
-    padding: 3rem 3.5rem; /*usei o paddin para não deixar colados*/
 
-  }
-
-            /*footer-nome inicio*/
-/*footer-nome estou modificando o sobre,link, inscrição*/
-
-.footer-nome{
-  color: var(--accent-color); /*cor do h3*/
-  font-weight: 500;/*para deixar o negrito mais forte*/
-  padding: 0.5rem 0; /* espaçamento entre o h3 e a barrinha de baixo*/
-  position: relative; /*especifiquei que a posição seria relative*/
-  display: inline-block;/*usei o display inline-block para deixar especificar que seria só até onde o nome do texto vai e não no final da div*/
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
-/*usei um after para fazer a barrinha de carregamento em baixo*/
-.footer-nome::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: var(--primary-color);
-    transition: var(--transition);
+
+.footer h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
 }
-.footer-nome:hover::after {
-  width: 100%;
-  transition: 0.5s ease;
+
+.footer-about p {
+  color: #bdc3c7;
+  margin-bottom: 1.5rem;
 }
-            /*footer-nome fim*/
 
-            /*social media inicio*/
-  #rede-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 0;
-    height: 50px;
-    background: var(--dark-color)
-  }
+.footer-about span {
+  color: var(--primary-color);
+}
 
-  #rede-social .footer-link{
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--secondary-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: 1s ease;
-    
-  }
-  #rede-social .footer-link i {
-    font-size: 1.25rem;
-  }
-  #rede-social .footer-link:hover{
-    opacity: 70%;
-  }
-  #insta{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807)
-  }
-
-  #whatsapp{
-    background-color: green;
-  }
-
-  #Facebook {
-    background-color: rgba(47, 80, 188, 0.893);
-  }
-  /*fim do social media*/
-/*lista inicio*/
-.footer-lista{
+.footer-social {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  list-style: none;
+  gap: 1rem;
 }
-.footer-lista .footer-link{
-  color: #ffffff;
-  transition: all 0.4s;
-}
-.footer-lista .footer-link:hover{
-  color: #7f37c9;
-}
-/*lista fim*/
 
-/*formulario*/
-#footer-subscribe{
+.footer-social a {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+  color: white; 
+  font-size: 1rem; 
 }
 
-#footer-subscribe p{
+.footer-social a:hover {
+  background-color: var(--primary-color);
   color: white;
 }
 
-#input-group{
-  display: flex;
-  align-items: center;
-  background-color: var(--text-light);
-  border-radius: 4px;
+.footer-links ul {
+  padding: 0;
 }
 
-#input-group input { 
-  all: unset; /*tirar a formatação que vem*/
-  padding: 0.75rem;
-  width: 100%;
-  border-radius: 5%;
-  background-color: #2533424d;;
+.footer-links li {
+  margin-bottom: 0.8rem;
 }
-/*botao do formulario*/
-#input-group button{
-  background-color: var(--secondary-color);
-  height: 100%;
-  border: none;
+
+.footer-links a {
+  color: #bdc3c7;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
   color: var(--primary-color);
-  padding: 0px 1.25rem;
-  font-size: 1.125rem;
-  border-radius: 0px 4px 4px 0px;
-  cursor:  pointer;
-  transition: all 0.4s;
+  padding-left: 5px;
 }
 
-#input-group button:hover{
-  opacity: 0.8;
+.footer-newsletter p {
+  color: #bdc3c7;
+  margin-bottom: 1.5rem;
 }
 
-/*nome de copyright*/
-#footer-copyright{
+.newsletter-form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#34495e, #2c3e50, #333333) ;
-  font-size: 0.9rem;
-  padding: 1.5rem;
-  font-weight: 100;
+  gap: 0.5rem;
 }
 
-#footer-copyright h5{
-  color: #ff9807; 
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
 }
+
+.newsletter-form button {
+  padding: 0.75rem 1rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+  color: #bdc3c7;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+  color: #bdc3c7;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--primary-color);
+}
+
 
 /* Tag que preenche os links vazios e os direcionam a Luganenhum */
-.spoof,
-footer-link spoof,
-botao botao-primario botao-full spoof {
+.spoof {
   transition: background-color .2s ease;
 }
 
